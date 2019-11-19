@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15740665506060" configfile="/management/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="helloNav.xhtml" id="pf15740666381186" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15740666381187 pf15740666381188" path="/helloNav.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="myNav.xhtml" id="pf15740666381189" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15740666381187" path="/myNav.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="actionMethod.xhtml" id="pf157406663811810" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15740666381188" path="/actionMethod.xhtml"/>
+  <links id="pf15740666381187" target="pf15740666381189" source="pf15740666381186" outcome="userDefined"/>
+  <links id="pf15740666381188" target="pf157406663811810" source="pf15740666381186" outcome="success" fromaction="#{userNav.submit}"/>
+</pageflow:Pageflow>

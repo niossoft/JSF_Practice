@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="BIG5" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>test4UIInputOnly</title>
+</head>
+<body>
+    <p>在h:inputTest tag裡，加入immediate="true"屬性，來觀察其生命週期</p>
+    <br/>
+	<h:form>
+		<h:inputText binding="#{myBean.inputComponent}"
+			value="#{myBean.inputValue}"
+			valueChangeListener="#{myBean.inputChanged}"
+			immediate="true">
+			<f:converter converterId="myConverter" />
+			<f:validator validatorId="myValidator" />
+		</h:inputText>
+		<h:commandButton value="submit" action="#{myBean.action}" />
+		<br/>
+		<h:outputText binding="#{myBean.outputComponent}"
+			value="#{myBean.outputValue}" />
+		<h:messages />
+	</h:form>
+</body>
+</html>
