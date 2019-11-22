@@ -3,8 +3,11 @@ package com.wudouli.example;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
 
+@FacesConverter("myConverter")
 public class MyConverter implements Converter {
+	
 
     public Object getAsObject(FacesContext context, UIComponent component, String value) {
         System.out.println("MyConverter getAsObject: " + value);

@@ -3,23 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
  http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
-
-    <!-- Example -->
-	<converter>
-		<converter-id>myConverter</converter-id>
-		<converter-class>com.wudouli.example.MyConverter</converter-class>
-	</converter>
-	<validator>
-		<validator-id>myValidator</validator-id>
-		<validator-class>com.wudouli.example.MyValidator</validator-class>
-	</validator>
-	<managed-bean>
-		<managed-bean-name>myBean</managed-bean-name>
-		<managed-bean-class>com.wudouli.example.MyBean</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
-	</managed-bean>
-
-	<!-- userDefined -->
+ 
+ 	<!-- UserDefined -->
 	<navigation-rule>
 		<from-view-id>/helloNav.xhtml</from-view-id>
 		<navigation-case>
@@ -37,4 +22,22 @@
 			<to-view-id>/actionMethod.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
+
+    <!-- Example -->
+	<!--
+	<converter>
+		<converter-id>myConverter</converter-id>
+		<converter-class>com.wudouli.example.MyConverter</converter-class>
+	</converter>
+	<validator>
+		<validator-id>myValidator</validator-id>
+		<validator-class>com.wudouli.example.MyValidator</validator-class>
+	</validator>
+	<managed-bean>
+		<managed-bean-name>myBean</managed-bean-name>
+		<managed-bean-class>com.wudouli.example.MyBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	-->
+
 </faces-config>
